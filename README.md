@@ -36,6 +36,10 @@ Once you try to spawn a 101st ball, old balls will begin being removed from the 
 
 Sometimes you might see a golf ball pass through another ball when at least one of the balls is travelling very fast. This is only likely to happen if you are on a low end device, and the frequency of the simulation is reduced to keep FPS high. (The sim frequency automatically changes based on CPU performance.)
 
+### Balls sometimes bouncing forever
+
+Due to my very simplistic physics model, balls will sometimes bounce forever. I know why this happens but it's hard to fix. I spent some trying to resolve it but the physics was too complex, so I gave up. Disappointing.
+
 ## The source code
 
 Everything of interest is within `src`. Contained within `src/model` is a model of the physics of bouncing balls based on what I could find on Wikipedia. Contained within `src/ui` is an implementation of a DOM-based UI. I.e. this contains what you see in the browser. `src/index.ts` creates and configures the simulation.
