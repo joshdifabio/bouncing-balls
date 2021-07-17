@@ -32,10 +32,6 @@ The simulation should perform fine on a desktop or laptop computer with up to 10
 
 Once you try to spawn a 101st ball, old balls will begin being removed from the simulation, FIFO. Note that ball colours will change when balls start getting removed from the simulation. I would have fixed this but it looks cool so I left it as is.
 
-### Balls passing through other balls
-
-Sometimes you might see a golf ball pass through another ball when at least one of the balls is travelling very fast. This is only likely to happen if you are on a low end device, and the frequency of the simulation is reduced to keep FPS high. (The sim frequency automatically changes based on CPU performance.)
-
 ### Balls sometimes bouncing forever
 
 Due to my very simplistic physics model, balls will sometimes bounce forever. I know why this happens but it's hard to fix. I spent some trying to resolve it but the physics was too complex, so I gave up. Disappointing.
